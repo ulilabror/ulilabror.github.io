@@ -1,0 +1,1 @@
+import{j as r}from"./index-CtQnsfb8.js";import{L as o}from"./Layout-Ds2L1KJN.js";import{a as s}from"./ProductList-Bg_A_Fwx.js";import"./CurrencyFormatter-CFY7w1jl.js";function n({products:t}){return r.jsx(r.Fragment,{children:r.jsx(o,{children:r.jsx(s,{products:t})})})}export{n as default};
