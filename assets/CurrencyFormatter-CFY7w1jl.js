@@ -1,1 +1,0 @@
-const e=(r,t="IDR",c="id-ID")=>{try{return new Intl.NumberFormat(c,{style:"currency",currency:t,minimumFractionDigits:0,maximumFractionDigits:0}).format(r)}catch(n){return console.error("Error formatting currency:",n),r}},o=e;export{o as C};
