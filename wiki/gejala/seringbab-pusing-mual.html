@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Medis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #2c5aa0;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-weight: bold;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f0f8ff;
+        }
+        .warning {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            color: #856404;
+        }
+        .emergency {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            color: #721c24;
+        }
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>📋 ANALISIS MEDIS</h2>
+            <p>Gejala: BAB 8x/hari + Pusing + Mual</p>
+        </div>
+
+        <div class="emergency">
+            <strong>⚠️ PERINGATAN MEDIS:</strong> Gejala ini memerlukan perhatian medis segera jika disertai: demam tinggi, darah dalam tinja, dehidrasi berat, atau pusing hingga pingsan.
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Jenis Gangguan</th>
+                    <th>Penyebab</th>
+                    <th>Gejala</th>
+                    <th>Cara Mengatasi (Medis)</th>
+                    <th>Cara Tradisional</th>
+                    <th>Referensi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Gastroenteritis Akut (Diare Infeksi)</strong></td>
+                    <td>
+                        <ul>
+                            <li>Virus (Rotavirus, Norovirus)</li>
+                            <li>Bakteri (E.coli, Salmonella, Shigella)</li>
+                            <li>Parasit (Giardia)</li>
+                            <li>Makanan/air terkontaminasi</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>BAB cair >3x/hari</li>
+                            <li>Mual dan muntah</li>
+                            <li>Pusing (dehidrasi)</li>
+                            <li>Kram perut</li>
+                            <li>Demam ringan</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>ORS:</strong> Oralit, Pharolit</li>
+                            <li><strong>Antidiare:</strong> Loperamide (Imodium) 2mg</li>
+                            <li><strong>Probiotik:</strong> Lacto-B, Rillus</li>
+                            <li><strong>Antiemetik:</strong> Domperidone 10mg</li>
+                            <li>Antibiotik (jika bakteri): Ciprofloxacin</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Air kelapa muda + garam</li>
+                            <li>Teh jahe hangat</li>
+                            <li>Air tajin (air beras)</li>
+                            <li>Pisang matang</li>
+                            <li>Daun jambu biji direbus</li>
+                        </ul>
+                    </td>
+                    <td>WHO Guidelines on Acute Diarrhea Management, 2023</td>
+                </tr>
+                <tr>
+                    <td><strong>Keracunan Makanan</strong></td>
+                    <td>
+                        <ul>
+                            <li>Makanan basi/terkontaminasi</li>
+                            <li>Toksin bakteri (Staph aureus)</li>
+                            <li>Seafood tidak segar</li>
+                            <li>Makanan tidak higienis</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Onset cepat (2-6 jam)</li>
+                            <li>Diare berair</li>
+                            <li>Mual muntah hebat</li>
+                            <li>Pusing dan lemas</li>
+                            <li>Kram perut</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Hidrasi:</strong> Infus RL jika dehidrasi</li>
+                            <li><strong>Simptomatik:</strong> Ondansetron 4mg</li>
+                            <li><strong>Antasida:</strong> Mylanta</li>
+                            <li>Monitoring elektrolit</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Minum air hangat + garam + gula</li>
+                            <li>Teh peppermint</li>
+                            <li>Air lemon hangat</li>
+                            <li>Istirahat total</li>
+                        </ul>
+                    </td>
+                    <td>CDC Foodborne Illness Guidelines, 2024</td>
+                </tr>
+                <tr>
+                    <td><strong>Sindrom Usus Iritabel (IBS)</strong></td>
+                    <td>
+                        <ul>
+                            <li>Stress dan kecemasan</li>
+                            <li>Perubahan pola makan</li>
+                            <li>Hormonal</li>
+                            <li>Sensitivitas makanan</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>BAB tidak teratur</li>
+                            <li>Kembung dan gas</li>
+                            <li>Mual intermiten</li>
+                            <li>Pusing terkait stress</li>
+                            <li>Kram perut</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Antispasmodik:</strong> Mebeverine 135mg</li>
+                            <li><strong>Probiotik:</strong> VSL#3</li>
+                            <li><strong>Antidepresan:</strong> Amitriptyline (dosis rendah)</li>
+                            <li>Diet FODMAP rendah</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Teh chamomile</li>
+                            <li>Yoga dan meditasi</li>
+                            <li>Kompres hangat perut</li>
+                            <li>Diet serat teratur</li>
+                        </ul>
+                    </td>
+                    <td>American Gastroenterological Association IBS Guidelines, 2024</td>
+                </tr>
+                <tr>
+                    <td><strong>Dehidrasi Akibat Diare</strong></td>
+                    <td>
+                        <ul>
+                            <li>Kehilangan cairan berlebihan</li>
+                            <li>Asupan cairan kurang</li>
+                            <li>Kehilangan elektrolit</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Pusing dan lemah</li>
+                            <li>Mulut kering</li>
+                            <li>Urin sedikit dan pekat</li>
+                            <li>Mata cekung</li>
+                            <li>Turgor kulit menurun</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>ORS:</strong> 200-400ml tiap BAB</li>
+                            <li><strong>Infus:</strong> RL/NS jika berat</li>
+                            <li><strong>Elektrolit:</strong> KCl, NaCl</li>
+                            <li>Monitoring intake-output</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Air kelapa + garam halus</li>
+                            <li>Larutan gula garam (1:1:8)</li>
+                            <li>Sup kaldu ayam</li>
+                            <li>Air tajin dengan garam</li>
+                        </ul>
+                    </td>
+                    <td>WHO/UNICEF Oral Rehydration Therapy, 2023</td>
+                </tr>
+                <tr>
+                    <td><strong>Intoleransi Laktosa</strong></td>
+                    <td>
+                        <ul>
+                            <li>Defisiensi enzim laktase</li>
+                            <li>Konsumsi produk susu</li>
+                            <li>Faktor genetik</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Diare setelah minum susu</li>
+                            <li>Kembung dan gas</li>
+                            <li>Mual</li>
+                            <li>Kram perut</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Enzim:</strong> Lactaid tablet</li>
+                            <li><strong>Diet:</strong> Hindari produk susu</li>
+                            <li><strong>Alternatif:</strong> Susu bebas laktosa</li>
+                            <li>Suplemen kalsium</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Susu kedelai atau almond</li>
+                            <li>Yogurt probiotik</li>
+                            <li>Teh jahe setelah makan</li>
+                            <li>Keju keras (rendah laktosa)</li>
+                        </ul>
+                    </td>
+                    <td>National Institute of Diabetes and Digestive Diseases, 2024</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="warning">
+            <h3>📌 REKOMENDASI TINDAK LANJUT:</h3>
+            <ul>
+                <li><strong>Segera ke dokter jika:</strong> Demam >38.5°C, darah dalam tinja, muntah terus-menerus, tanda dehidrasi berat</li>
+                <li><strong>Hidrasi:</strong> Minum ORS/oralit minimal 200ml setiap selesai BAB</li>
+                <li><strong>Diet:</strong> BRAT diet (Banana, Rice, Applesauce, Toast) selama 24-48 jam</li>
+                <li><strong>Hindari:</strong> Makanan berlemak, pedas, kafein, alkohol, produk susu</li>
+                <li><strong>Kontrol:</strong> Jika gejala >3 hari atau memburuk</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 20px; padding: 15px; background-color: #e8f4fd; border-radius: 5px;">
+            <small><strong>Disclaimer:</strong> Informasi ini bersifat edukatif dan tidak menggantikan konsultasi medis langsung. Untuk diagnosis pasti dan pengobatan yang tepat, harap konsultasi dengan dokter.</small>
+        </div>
+    </div>
+</body>
+</html>
